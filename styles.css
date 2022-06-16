@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Rye&display=swap');
+
+body, html {
+    display: block;
+    margin: 0;
+    background-image: url("table.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 10px solid black; */
+}
+
+#btn-remainder-div {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#remainder-h1 {
+    font-size: 2rem;
+    margin-left: 1.5em;
+}
+
+.card-holder {
+    width: 220px;
+    height: 308px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-between;
+    /* border: 10px solid black; */
+    width: 30%;
+    margin-bottom: 8em;
+}
+
+#players {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content:flex-start;
+    font-size: 1.5rem;
+    width: 30%;
+}
+
+#your-card {
+    margin: 0 0 0 3.2em;
+}
+
+#comp-card {
+    margin: 0;
+}
+
+button {
+    background-color: #ffe600;
+    font-family: 'Rye', cursive;
+    color: #444444;
+    border: none;
+    box-shadow: 0 0 10px #444444;
+    cursor: pointer;
+}
+
+#new-deck-btn {
+    font-size: 2.5rem;
+    align-self: flex-start;
+    padding: .5em;
+}
+
+#get-cards-btn {
+    font-size: 3rem;
+    display: block;
+    width: 100%;
+    padding: .5em;
+}
+
+.click-anime {
+    transform: scale(1);
+    transition: transform 100ms;
+}
+
+.click-anime:active {
+    transform: scale(0.95);
+    }
+
+@media (max-width:600px) {
+    .container {
+        height: 90vh;
+    }
+
+    #remainder-h1 {
+        font-size: 1.5em;
+    }
+    
+    #new-deck-btn {
+        font-size: 1.4rem;
+    }
+    
+    #get-cards-btn {
+        font-size: 2rem;
+    }
+
+    #cards, #players {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .card , .card-holder{
+        max-width: 45%;
+    }
+}
